@@ -6,8 +6,6 @@
 
 115 网盘自动化上传与 qBittorrent 联动工具
 
-[![build](https://github.com/xushier/UPilot/actions/workflows/docker-build.yml/badge.svg)](https://github.com/xushier/UPilot/actions/workflows/docker-build.yml)
-
 </div>
 
 UPilot 监控本地媒体目录（如刮削软件整理后的媒体库），发现新文件自动上传到 115 网盘，上传完成后把状态回写到 qBittorrent 种子标签，并按照配置的规则自动清理本地文件和种子。配合 MoviePilot / NAStool 与 OneStrm 等工具，可以串起一套完整的流程：
