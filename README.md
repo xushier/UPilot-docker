@@ -46,6 +46,21 @@ UPilot 监控本地媒体目录（如刮削软件整理后的媒体库），发�
 | 下载与整理刮削 | [MoviePilot](https://github.com/jxxghp/MoviePilot) / [NAStool](https://github.com/NAStool/nas-tools)（已停止维护，老用户可继续使用） |
 | 302 直链播放 | [OneStrm](https://wiki.onestrm.cn/) 等 302 反代工具，配合 Emby 生成 strm 直接播放 |
 
+## 界面预览
+
+<div align="center">
+
+主页
+<img src="assets/home.png" width="100%" alt="主页" />
+
+上传历史
+<img src="assets/upload-history.png" width="100%" alt="上传历史" />
+
+分类同步预览
+<img src="assets/category-sync-preview.png" width="100%" alt="分类同步预览" />
+
+</div>
+
 ## 快速开始
 
 ```yaml
