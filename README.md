@@ -91,6 +91,14 @@ services:
 
 - 首次访问 `http://ip:9843`，默认账号密码均为 `admin`，登录后请及时修改；
 
+## 配置示例
+假设：
+- QB 容器内的默认下载目录为 /mnt/upload，QB 容器将 /mnt 映射到了主机的 /vol2/1000/download，即 QB 内下载到 /mnt/upload 的文件都在主机的 /vol2/1000/download/upload 下；
+- MoviePilot 硬链接后的文件路径在主机上是 /vol2/1000/download/upload-115；
+- 那么，UPilot 需要监控硬链接路径，并比对 QB 下载文件，所以 UPilot 只需将主机的硬链接路径及主机的 QB 下载路径映射到 UPilot 容器内，然后在网页上配置即可。
+
+**不知道怎么配置可联系作者免费帮助配置**
+
 ## 致谢
 
 - [p115client](https://github.com/ChenyangGao/p115client)；
