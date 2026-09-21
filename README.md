@@ -84,7 +84,6 @@ services:
     image: xushier/upilot:latest
     container_name: upilot
     restart: unless-stopped
-    network_mode: bridge
     ports:
       - "9843:9843"
     environment:
@@ -95,9 +94,9 @@ services:
       # 授权绑定宿主机（激活必需，容器重建/升级不影响授权）
       - /etc/machine-id:/etc/machine-id:ro
       # 刮削软件整理后的媒体目录
-      - /path/to/b-media:/media/b-media
+      - /path/to/b-media:/media/media
       # qBittorrent 下载目录
-      - /path/to/a-download:/media/a-download
+      - /path/to/a-download:/media/download
     ulimits:
       nofile:
         soft: 65536
